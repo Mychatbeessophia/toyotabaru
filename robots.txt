@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://Mychatbeessophia.github.io/toyotabaru/sitemap.xml
+Sitemap: https://toyotabaru.com/sitemap.xml
