@@ -153,8 +153,9 @@ header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdro
 .deal{background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin:10px 0 4px}
 .deal-monthly{display:flex;flex-direction:column;gap:2px}
 .deal-monthly>span{color:var(--grey);font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.03em}
-.deal-monthly b{font-size:26px;font-weight:800;color:var(--ink);line-height:1}
-.deal-monthly b.ask{font-size:19px;color:var(--red)}
+.deal-monthly b{font-size:clamp(18px,2.1vw,26px);font-weight:800;color:var(--ink);line-height:1.05;letter-spacing:-.02em;white-space:nowrap}
+.deal-monthly b.ask{font-size:clamp(16px,1.7vw,19px);color:var(--red);white-space:normal}
+.deal-monthly>div{display:flex;align-items:baseline;flex-wrap:wrap;gap:2px}
 .deal-monthly em{font-style:normal;font-size:13px;color:var(--grey);font-weight:600;margin-left:3px}
 .deal-otr{font-size:12px;color:var(--grey);font-weight:600;margin-top:2px}
 .deal-save{margin-top:10px;padding-top:10px;border-top:1px dashed var(--line);color:var(--red);font-weight:700;font-size:14px}
@@ -272,6 +273,10 @@ footer ul{list-style:none;display:grid;gap:8px}
   .card-body{padding:13px 13px 15px}
   .card-body h4{font-size:16px}
   .card-price b{font-size:18px}
+  .deal{padding:11px 12px}
+  .deal-monthly>span{font-size:11px}
+  .deal-monthly b{font-size:clamp(16px,5vw,21px)}
+  .deal-monthly em{font-size:12px}
   .card-actions{flex-direction:column;gap:7px;margin-top:11px}
   .card-badge,.card-type{font-size:10px;padding:4px 8px}
   .promo-txt{padding:28px 22px}
