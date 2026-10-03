@@ -298,6 +298,40 @@ footer ul{list-style:none;display:grid;gap:8px}
 @media(max-width:360px){
   .grid{grid-template-columns:1fr}
 }
+
+/* ==== Blue theme (matches MAKE TOYOTA YOURS banner) — Oct 2026 ==== */
+:root{--navy:#26336a;--navy-deep:#1b2452;--blue:#1d4f8f;--sky:#0e7fa9;--ice:#b9d6ec;
+  --sky-grad:linear-gradient(160deg,#26336a 0%,#1e4686 52%,#0e7fa9 100%)}
+/* hero: strip under the banner blends into the banner's white base */
+.hero.hero-banner,.hero-banner .hero-media{background:#fff}
+.hero-banner .hero-inner{padding:18px 0 26px}
+.hero-banner .cta .btn-ghost{background:#fff!important;color:var(--navy)!important;border-color:var(--navy)!important}
+.hero-banner .cta .btn-ghost:hover{background:var(--navy)!important;color:#fff!important}
+/* trust bar: banner sky band */
+.trustbar{background:linear-gradient(90deg,#26336a 0%,#1e4686 50%,#26336a 100%);position:relative}
+.trustbar::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:linear-gradient(90deg,transparent,#e9c98f,transparent);opacity:.7}
+.trust-grid span{color:var(--ice)}
+/* promo box + trade-in / loan cards: navy -> sky gradient with sunrise glow */
+.promo{background:var(--sky-grad);position:relative}
+.promo-img{position:relative}
+.promo::before{content:"";position:absolute;right:-5%;bottom:-30%;width:65%;height:90%;background:radial-gradient(ellipse at center,rgba(255,236,200,.42),rgba(83,167,191,.18) 45%,transparent 70%);pointer-events:none}
+.promo>*{position:relative}
+.promo li{color:#eef4fb}
+.band-card{background:var(--sky-grad);box-shadow:0 10px 30px rgba(30,70,134,.18)}
+.band-card p{color:#dbe8f5}
+/* contact: deep navy */
+.contact{background:linear-gradient(180deg,#26336a 0%,#1b2452 100%)}
+.contact .eyebrow{color:#8fd0ea!important}
+.info-row span{color:var(--ice)}
+.info-row .ico{background:rgba(255,255,255,.12)}
+.map{border-color:rgba(185,214,236,.25)}
+/* footer: darkest navy instead of black */
+footer{background:#141b40;color:#a9b6d6}
+footer a{color:#a9b6d6}
+.foot-bottom{border-top-color:rgba(185,214,236,.15)}
+@media(min-width:768px){.hero-banner .hero-inner{margin-top:-12.5vw;padding:0 0 28px;position:relative;z-index:2}}
+/* card-type */
+.card-type{background:rgba(38,51,106,.82)}
 </style>
 </head>
 <body>
